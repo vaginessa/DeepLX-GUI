@@ -13,25 +13,21 @@ class TranslatorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.from(
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: MaterialColor(
-            0xFF6200EE,
-            <int, Color>{
-              50: const Color.fromARGB(255, 231, 231, 246),
-              100: const Color(0xFFD1C4E9),
-              200: const Color(0xFFB39DDB),
-              300: const Color(0xFF9575CD),
-              400: const Color(0xFF7E57C2),
-              500: const Color(0xFF6200EE),
-              600: const Color(0xFF5E35B1),
-              700: const Color(0xFF512DA8),
-              800: const Color(0xFF4527A0),
-              900: const Color(0xFF311B92),
-            },
-          ),
-        ),
-      ),
+      theme: ThemeData(primaryColor: Colors.grey, appBarTheme: const AppBarTheme(color: Colors.grey)),
+      // ThemeData.from(
+      //   colorScheme: ColorScheme.fromSwatch(
+      //     primarySwatch: const MaterialColor(
+      //       0xFF6200EE,
+      //       <int, Color>{
+      //         50: Color.fromARGB(255, 231, 231, 246),
+      //         100: Color(0xFFD1C4E9),
+      //         200: Color(0xFFB39DDB),
+      //         300: Color(0xFF9575CD),
+      //         400: Color(0xFF7E57C2),
+      //       },
+      //     ),
+      //   ),
+      // ),
       home: const TranslatorScreen(),
     );
   }
