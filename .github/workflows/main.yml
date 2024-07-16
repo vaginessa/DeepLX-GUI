@@ -2,6 +2,9 @@ name: 'Builds - build Flutter APK and create github release'
 description: 'A GitHub Action that builds a Flutter APK'
 author: 'Sayan Biswas'
 
+on:
+  workflow_dispatch:
+  
 branding:
   icon: 'maximize'
   color: 'blue'
