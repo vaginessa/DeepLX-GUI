@@ -1,4 +1,4 @@
-name: build apk
+name: build Flutter APK
 
 on:
   workflow_dispatch:
@@ -52,5 +52,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Upload Debug
-          path: ${{ steps.android-build.outputs.apk-path }}
-      
+          path: build/app/outputs/flutter-apk/app-release.apk
