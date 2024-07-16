@@ -1,7 +1,9 @@
 name: 'Builds - build Flutter APK and create github release'
 description: 'A GitHub Action that builds a Flutter APK'
 author: 'Sayan Biswas'
-
+jobs:
+  my_first_job:
+    name: My first job
 on:
   workflow_dispatch:
   
