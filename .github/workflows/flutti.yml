@@ -48,8 +48,15 @@ jobs:
           flutter pub get
           flutter build apk
 
-      - name: upload debug
+      - name: Upload Debug
         uses: actions/upload-artifact@v4
         with:
           name: Upload Debug
           path: /build/app/outputs/flutter-apk/*.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+       
